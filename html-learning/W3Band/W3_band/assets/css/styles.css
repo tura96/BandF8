@@ -1,0 +1,512 @@
+/* Reset*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+    font-family:Arial, Helvetica, sans-serif ;
+}
+#main {
+
+}
+
+#header {
+    height: 46px;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+#nav{
+    display: inline-block;
+}
+
+#nav > li{
+    display: inline-block;
+}
+#nav li{
+    position: relative;
+}
+#nav > li > a{
+    color: white;
+    text-transform: uppercase;
+}
+#nav li a{
+    text-decoration: none;
+    line-height: 46px;
+    padding: 0 24px;
+    display: block;
+
+     
+}
+#nav li:hover .subnav{
+    display: block;
+}
+#nav .subnav li:hover a,
+#nav > li:hover > a{
+    color: black;
+    background-color: #ccc;
+    
+}
+#nav .subnav{
+    list-style-type: none;
+    min-width: 160px;
+    display: none;
+    position: absolute;
+    background-color: white;
+    color: black;
+    box-shadow:0 0 8px rgb(110, 106, 106);
+
+}
+#nav .nav-icon{
+    font-size: 12px;
+}
+#nav .subnav a{
+    color: black;
+    padding: 0 10px;
+    line-height: 38px;
+}
+#header .search-brt{
+float: right;
+color: white;
+padding: 0 21px;
+line-height: 46px;
+font-size: 20px;
+cursor: pointer;
+}
+.mobile-menu-btn{
+float: right;
+color: white;
+padding: 0 21px;
+line-height: 46px;
+font-size: 20px;
+cursor: pointer;
+display: none;
+}
+.mobile-menu-btn:hover {
+    color: #000;
+    background-color: #ccc;
+}
+.search-brt:hover{
+    background-color: #f44336;
+}
+#slider {
+ background: url('/html-learning/W3Band/W3_band/assets/img/slider/slider1.jpg') top center / cover no-repeat;
+ background-size: 100%;
+ margin-top: 46px;
+ position: relative;
+ padding-top: 50%;
+ z-index: -1;
+}
+.slider-content{
+    width: 100%;
+    color: white;
+    text-align: center;
+    padding: 32px 16px;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    position: absolute;
+}
+.slider-header{
+
+
+}
+.slider-text{
+
+
+}
+ 
+#content {
+margin-left: auto;
+margin-right: auto;
+}
+
+#about{
+margin: 0 auto;
+padding: 64px 0;
+max-width: 800px;
+}
+
+.content-header{
+font-size: 30px;
+margin: 10px 0;
+text-align: center;
+letter-spacing: 6px;
+}
+
+.content-sologan{
+font-size: 15px;
+margin: 15px 0;
+text-align: center;
+font-style: italic;
+color: rgb(110, 108, 108);
+}
+#about-text{
+text-align: justify;
+font-size: 15px;
+margin: 15px 0;
+padding: 0 10%;
+}
+#about-member{
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+text-align: center;
+padding: 36px 0;
+
+}
+
+.member-name{
+left: 0;
+right: 0;
+padding: 15px;
+}
+
+.member{
+float: left;
+width: calc(100%/3);
+
+}
+.member-img{
+width: 154px;
+border-radius: 4px;
+}
+
+/* Tour section */
+#tour-section{
+background-color: #000;
+
+}
+#tour-date{
+background-color: black;
+color: white;
+padding: 64px 16px;
+margin: 0 auto;
+max-width: 800px;
+display: flex;
+flex-direction: column;
+}
+.tickets-booking{
+background-color: #fff;
+color: #757575;
+font-size: 15px;
+list-style: none;
+}
+.tickets-booking>li{
+    padding: 8px 16px;
+    height: 40px;
+    border-bottom: 1px solid #ddd;
+}
+.sold-out{
+background-color: #f44336;
+color: #fff;
+padding: 3px 4px;
+margin-left: 3px;
+
+}
+.ticket-number{
+float: right;
+color: #fff;
+background-color: #000;
+border-radius: 50%;
+margin-right: 16px;
+width: 24px;
+height: 24px;
+text-align: center;
+line-height: 24px;
+}
+/* Show */
+.show-list{
+display: flex;
+margin: 0 auto;
+max-width: 800px;
+}
+.show-container{
+float: left;
+width: 33.33%;
+margin: 0 8px;
+padding-bottom: 96px;
+}
+.show-img{
+width: 100%;
+display:block;
+}
+.show-img:hover{
+    opacity: 0.60
+}
+.show-body{
+background-color: #fff;
+padding: 15px 16px; 
+font-size: 15px; 
+}
+.show-header{
+font-size: 15;
+padding: 15px 0;
+font-weight: 550;
+}
+
+.show-time{
+padding-bottom: 15px;
+color: #757575;
+}
+.show-text{
+padding-bottom: 15px;
+line-height: 1.4;
+
+}
+.buy-tickets-btn{
+text-decoration: none;
+padding: 10px 18px;
+cursor: pointer;
+background-color: #000;
+color: #fff;
+border: none;
+}
+.buy-tickets-btn:hover{
+background-color: #757575;
+color: #000;
+}
+#footer {
+
+}
+.modal{
+align-items: center;
+justify-content: center;
+position: fixed;
+right: 0;
+left: 0;    
+top: 0;
+bottom: 0;
+background-color: rgba(0,0,0,0.5);
+display: none;
+}
+.modal-container {
+width: 900px;
+max-width: calc(100% - 64px) ;
+background-color: #009688;
+min-height: 300px;
+position: relative;
+animation: modalFadein ease 0.5s;
+}
+.modal-close:hover {
+    background-color: #757575;
+    color: #fff;
+    opacity: 1;
+}
+.modal-close {
+    position: absolute;
+    right: 0;
+    padding: 16px;
+    opacity: 0.8;
+    cursor: pointer;
+    color: #FFF;
+}
+.modal-header {
+    height: 129px;
+    padding: 32px 16px;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+}
+.ti-bag:before {
+        padding-right: 12px;
+}
+.ti-bag {
+    text-transform: uppercase;
+    font-size: 30px;
+    padding: 10px 0;
+}
+.modal-body {
+    background: #FFF;
+    padding: 16px;
+    font-size: 15px;
+}
+.modal-label {
+    padding: 20px 0 10px;
+}
+.modal-input {
+    width: 100%;
+    padding: 8px;
+    border: #ccc 1px solid;
+}
+.modal-button {
+    width: 100%;
+    color: #FFF;
+    background-color: #009688;
+    border: none;
+    padding: 16px 0;
+}
+.modal-button:hover {
+    color: #000;
+    background-color: #ccc;
+}
+.modal-footer {
+    text-align: right;
+    background-color: #fff;
+    padding: 16px 16px 32px;
+}
+.modal.open{
+display: flex;
+}
+@keyframes modalFadein {
+    from{ 
+        opacity: 0;
+        transform:translatey(-100px);
+    }
+    to{ 
+        opacity: 1;
+        transform:translatey(0)
+    }
+    
+}
+.row{
+    margin-left: -8px;
+    margin-right: -8px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.col{
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+.col-half{
+    width: 50%;
+}
+.col-full{
+    width: 100%;
+}
+.form-control{
+padding: 8px 8px;
+margin-top: 8px;  
+width: 100%;
+border: 1px solid #ccc;
+}
+#contact {
+    padding: 64px 0;
+}
+.contact-info i{
+    
+}
+.contact-container{
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 64px 16px;
+    font-size: 18px;
+}
+.contact-send{
+    margin-top: 16px;
+    float: right;
+    margin-right: 16px;
+    padding: 9px 16px;
+    color: #FFF;
+    background-color: #000;
+    border: none;
+    cursor: pointer;
+}
+.contact-send:hover {
+color: #000;
+background-color: #ccc;
+}
+.map-section img{
+width: 100%;
+height: auto;
+}
+#footer{
+padding: 64px 16px;
+text-align: center;
+}
+.social-section a{
+color: #757575;
+font-size: 24px;
+text-decoration: none;
+}
+.social-section a:hover{
+    opacity: 0.45;
+}
+#footer p{
+    font-size: 15px;
+    color: #757575;
+    margin: 15px;
+}
+#footer p a{
+    color: #757575;
+}
+
+/* Mobile: width < 740px */
+@media only screen and (max-width: 46.1875em) {
+    .s-full-width{
+        width: 100%;
+    }
+
+    #header{
+        overflow: hidden;
+    }
+    #nav {
+        display: block;
+    }
+    #nav .subnav {
+    position: initial;
+    padding: 5px 30px;
+    background-color: #ccc;
+    }
+
+    #nav > li:first-child {
+        display:inline-block;
+    }
+    #nav > li {
+        display: block;
+    }
+    #header .search-brt{
+        display: none;
+    }
+    #header .mobile-menu-btn{
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    #about-member{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    }
+    .member{
+        width: 100%;
+    }
+    .member-img{
+        width: 65%;
+    }
+    .show-list{
+        flex-direction: column;
+        width: 95%;
+        align-items: center;
+    }
+    .show-container{
+        width: 100%;
+        margin-bottom: 16px;
+        padding: 0;
+    }
+    .contact-container .row{
+        flex-direction: column;
+    }
+    .contact-container .row .col-half{
+        width: 100%;
+    }
+    .contact-send{
+        float: initial;
+    }
+
+}
+
+/* Tablet: width >= 740px and width < 1024px */
+@media only screen and (min-width: 46.25em) and (max-width: 63.9375em) {
+    
+}
